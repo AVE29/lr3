@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Лабораторная 3</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+</head>
+<body>
+<a style="position:absolute; top:760px; left: 25px;" href="2.html">К заданию 2</a>
+<!--*"Задний фон"*--!>
+<div style="width:1920px;height:750px;background-color: #FFFACD;">
+<!--*Заголовок помещённый по цнтру за счёт отступов*--!>
+<h1 style="padding: 3px 0 0 110px;">Автосалон "Jet Car"</h1>
+<!--*Добавление картинок*--!>
+<div><img onMouseOver="Car1text()" onmouseout="change()" src="image\car1.jpg" name="pic1" id="img1" style="position:absolute; top:75px; left: 25px; width:400; height:250; z-index: 1; "></div>
+<div><img onMouseOver="Car2text()" onmouseout="change()" src="image\car2.jpg" name="pic2" id="img2" style="position:absolute; top:75px; left: 600px; width:2000; height:200; z-index: 1; "></div>
+<div><img onMouseOver="Car3text()" onmouseout="change()" src="image\car3.jpg" name="pic3" id="img3" style="position:absolute; top:380px; left: 25px; width:360; height:200; z-index: 1; "></div>
+<div><img onMouseOver="Car4text()" onmouseout="change()" src="image\car4.jpg" name="pic4" id="img4" style="position:absolute; top:380px; left: 600px; width:400; height:300; z-index: 1; "></div>
+<!--*поле с текстом*--!>
+<p><input type="text" size="85" id="textpole" style="position:absolute; top:695px; left: 25px;  height: 35px; padding: 1px; z-index: 1; color: #172566" /></p>
+</div>
+<!--*Функции для изменения текста*--!>
+<script>
+    function Car1text() {
+     document.getElementById("textpole").value="Mercedes, 9 000 000 ₽";
+    }
+    function Car2text() {
+     document.getElementById("textpole").value="BMW, 7 000 000 ₽";
+    }
+    function Car3text() {
+     document.getElementById("textpole").value="Renault, 6 500 000 ₽";
+    }
+    function Car4text() {
+     document.getElementById("textpole").value="Toyota, 5 500 000 ₽";
+    }
+    function change() {
+     document.getElementById("textpole").value="";
+    }
+</script>
+
+</body>
+</html>
